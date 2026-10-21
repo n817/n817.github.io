@@ -1,0 +1,58 @@
+@import "./vendor/normalize.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* Colors */
+  --color-text-primary: #121212;
+  --color-text-secondary: #808080;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #c5e0fc;
+  --color-blue: #3f96f3;
+  --color-hover-primary: #bfdbfe;
+  --color-hover-secondary: #c5e0fc;
+
+  /* Typography */
+  --font-body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-primary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-primary);
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-blue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
