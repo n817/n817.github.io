@@ -1,9 +1,11 @@
 import "./App.css";
 
+import { Header } from "../Header/Header";
+
 function App() {
   return (
     <>
-      <h1>Everything will be here soon</h1>
+      <Header />
     </>
   );
 }
