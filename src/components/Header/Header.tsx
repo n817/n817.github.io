@@ -8,7 +8,7 @@ const links = [
   { href: "#home", label: "Home" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
+  { href: "#contacts", label: "Contacts" },
 ];
 
 export function Header() {
@@ -17,10 +17,7 @@ export function Header() {
   return (
     <header className="header">
       <div className={`navbar ${isOpen ? "navbar_open" : ""}`}>
-        <a
-          href="#home"
-          onClick={() => setIsOpen(false)}
-        >
+        <a href="#home" onClick={() => setIsOpen(false)}>
           <img src={Logo} alt="Logo" className="navbar__logo" />
         </a>
 

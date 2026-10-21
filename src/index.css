@@ -14,6 +14,26 @@
 
   /* Typography */
   --font-body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Suisse Intl Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-size-sm: 14px;
+  --font-size-primary: 16px;
+  --font-size-secondary: 16px;
+  --font-size-large: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 44px;
+  --font-size-caption: 14px;
+
+  /* Shadow */
+  --shadow-elevated:
+    0 0 0.5px 0 rgb(0 0 0 / 0.3), 0 1px 3px 0 rgb(0 0 0 / 0.15);
+
+  /* Layout */
+  --content-max-width: 1280px;
+
+  /* Other */
+  --border-radius: 8px;
+  --border-project-card: 1px solid #eef4ff;
+  --padding-button: 14px 24px;
 }
 
 *,
@@ -55,4 +75,78 @@ img {
 
 button {
   cursor: pointer;
+}
+
+.section {
+  padding: 0 24px;
+}
+
+.section__inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.section__title {
+  font-size: var(--font-size-xxl);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0 0 40px;
+}
+
+.section__title_footer {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 480px) {
+  .section__inner {
+    padding: 64px 0;
+  }
+
+  .section__title {
+    margin-bottom: 28px;
+    font-size: 32px;
+  }
+
+  .section__title_footer {
+    margin-bottom: 0;
+  }
+}
+
+/* Buttons: ~48px tall -> 12px radius per the border-radius scale */
+.button {
+  width: 180px;
+  height: 60px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color-hover-secondary);
+  border-color: transparent;
+}
+
+.button_primary {
+  background-color: var(--color-blue);
+  color: #ffffff;
+  font-size: var(--color-text-primary);
+}
+
+.button_primary:hover {
+  color: var(--color-text-primary);
+}
+
+.button_secondary {
+  background-color: transparent;
+  color: #212121;
+  border-color: var(--color-blue);
 }
