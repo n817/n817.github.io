@@ -1,11 +1,11 @@
 import "./Hero.css";
 
 import { profile } from "../../data/profile";
-import heroIllustration from "../../assets/images/hero.jpeg";
+import heroIllustration from "../../assets/images/avatar.svg";
 
 export function Hero() {
   return (
-    <section id="about" className="hero section">
+    <section id="home" className="hero section">
       <div className="section__inner hero__inner">
         <div className="hero__content">
           <span className="hero__eyebrow">let's work together</span>
@@ -17,7 +17,7 @@ export function Hero() {
 
           <div className="hero__actions">
             <a className="button button_primary" href="#projects">
-              View my work <span className="arrow">→</span>
+              View my work <span>→</span>
             </a>
             <a className="button button_secondary" href="#contacts">
               Get in touch

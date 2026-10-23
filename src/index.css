@@ -11,6 +11,7 @@
   --color-blue: #3f96f3;
   --color-hover-primary: #bfdbfe;
   --color-hover-secondary: #c5e0fc;
+  --color-border: #eef4ff;
 
   /* Typography */
   --font-body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -40,6 +41,17 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 66px; /* height of the sticky .header */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -78,7 +90,7 @@ button {
 }
 
 .section {
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 .section__inner {
@@ -98,26 +110,9 @@ button {
   margin: 0 0 12px;
 }
 
-@media (max-width: 480px) {
-  .section__inner {
-    padding: 64px 0;
-  }
-
-  .section__title {
-    margin-bottom: 28px;
-    font-size: 32px;
-  }
-
-  .section__title_footer {
-    margin-bottom: 0;
-  }
-}
-
-/* Buttons: ~48px tall -> 12px radius per the border-radius scale */
 .button {
   width: 180px;
   height: 60px;
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -138,7 +133,6 @@ button {
 .button_primary {
   background-color: var(--color-blue);
   color: #ffffff;
-  font-size: var(--color-text-primary);
 }
 
 .button_primary:hover {
@@ -149,4 +143,23 @@ button {
   background-color: transparent;
   color: #212121;
   border-color: var(--color-blue);
+}
+
+@media (max-width: 480px) {
+  .section__inner {
+    padding: 64px 0;
+  }
+
+  .section__title {
+    margin-bottom: 28px;
+    font-size: 32px;
+  }
+
+  .section__title_footer {
+    margin-bottom: 0;
+  }
+
+  .button {
+    width: 100%;
+  }
 }

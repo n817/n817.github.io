@@ -16,12 +16,11 @@
 }
 
 .contact__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   color: var(--color-text-primary);
   font-size: var(--font-size-primary);
   text-decoration: none;
-  display: flex;
   gap: 12px;
 }
 
@@ -96,6 +95,6 @@
   background-image: url(../../assets/icons/linkedin.svg);
 }
 
-.contact__social_twitter::before {
+/* .contact__social_twitter::before {
   background-image: url(../../assets/icons/twitter.svg);
-}
+} */

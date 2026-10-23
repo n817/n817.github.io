@@ -12,6 +12,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         className="project-card__image"
         src={project.image}
         alt={`Screenshot of ${project.name}`}
+        loading="lazy"
       />
       <div className="project-card__body">
         <h3 className="project-card__name">{project.name}</h3>

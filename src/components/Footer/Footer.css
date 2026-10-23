@@ -1,5 +1,5 @@
 .footer {
-  padding: 100px 0;
+  padding: 100px 20px;
   /* background-image: linear-gradient(rgba(42,44,47,.3), rgba(42,44,47,.3)), url(../../assets/images/background.jpeg);
   background-size: cover;
   background-position: center;
@@ -17,9 +17,8 @@
 
 .footer__blurb {
   max-width: 500px;
-  color: var(--color-text-contacts);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-secondary);
-  font-weight: 500;
   line-height: 1.6;
 }
 

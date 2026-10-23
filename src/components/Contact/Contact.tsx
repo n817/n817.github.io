@@ -28,27 +28,28 @@ export default function Contact() {
             href={profile.resume}
             target="_blank"
             rel="noreferrer"
-            download
             className="contact__link contact__link_resume"
           >
-            Download my resume (PDF)
+            View my resume (PDF)
           </a>
         </li>
       </ul>
       <ul className="contact__social-list">
         <li>
           <a
-            href="https://github.com/n817"
+            href={profile.githubUrl}
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
             className="contact__social contact__social_github"
           ></a>
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/n817"
+            href={profile.linkedinUrl}
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
             className="contact__social contact__social_linkedin"
           ></a>
         </li>
