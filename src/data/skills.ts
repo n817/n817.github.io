@@ -2,29 +2,32 @@ import type { SkillGroup } from "../types";
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: "Languages",
-    items: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
+    category: "Frontend Development",
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "HTML5",
+      "CSS3",
+      "Responsive Web Design",
+    ],
   },
   {
-    category: "Frontend",
-    items: ["React", "Vite", "Responsive Web Design"],
-  },
-  {
-    category: "Backend & APIs",
+    category: "Backend & Databases",
     items: ["Node.js", "Express.js", "REST APIs", "MongoDB"],
   },
   {
     category: "AI Engineering",
     items: [
       "LLM Integration",
-      "RAG",
+      "Retrieval-Augmented Generation",
       "Embeddings",
       "Vector Search",
       "AI-powered Search",
     ],
   },
   {
-    category: "Tools & Deployment",
-    items: ["Git", "Docker", "AWS", "GitHub Actions"],
+    category: "Tools & Cloud",
+    items: ["Git", "Docker", "AWS", "GitHub Actions", "CI/CD"],
   },
 ];
