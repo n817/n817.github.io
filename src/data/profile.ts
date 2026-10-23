@@ -8,9 +8,9 @@ export const profile: Profile = {
   contactPrompt: "Prefer the human approach? Get in touch below.",
   specialization: "Full-Stack & AI Engineering • Network Engineering",
   email: "nikolai.gavriushin@gmail.com",
-  locationText: "Tbilisi, Georgia (Open to Remote)",
+  locationText: "Tbilisi, Georgia",
   locationUrl: "https://maps.app.goo.gl/KALhC8exT42M6SfN7",
   githubUrl: "https://github.com/n817",
   linkedinUrl: "https://www.linkedin.com/in/n817",
-  resume: "/nikolai_gavriushin_cv.pdf",
+  resume: "/cv_nikolai_gavriushin.pdf",
 };
