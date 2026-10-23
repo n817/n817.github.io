@@ -2,6 +2,8 @@ export interface Profile {
   name: string;
   title: string;
   blurb: string;
+  contactPrompt: string;
+  specialization: string;
   email: string;
   githubUrl: string;
   linkedinUrl: string;

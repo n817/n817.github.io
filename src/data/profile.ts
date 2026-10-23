@@ -2,13 +2,15 @@ import type { Profile } from "../types";
 
 export const profile: Profile = {
   name: "Nikolai Gavriushin",
-  title: "Software Engineer",
+  title: "Got a challenge for me?",
   blurb:
-    "I’m a Software Engineer working with JavaScript, React, and Node.js, with a background in enterprise networking and technical troubleshooting. I help businesses solve technical problems, build web applications, and implement practical AI solutions using LLMs, RAG, and agentic web search, with a focus on meeting business goals and delivering results on time. I’m happy to collaborate on interesting projects, especially those involving challenging technical problems and modern AI technologies.",
+    "Use the AI-powered tool to see how well your project or job opportunity matches my skills and experience. Less guessing, better matching. No awkward first dates required.",
+  contactPrompt: "Prefer the human approach? Get in touch below.",
+  specialization: "Full-Stack & AI Engineering • Network Engineering",
   email: "nikolai.gavriushin@gmail.com",
-  locationText: "Tbilisi, Georgia (Open to Remote)",
+  locationText: "Tbilisi, Georgia",
   locationUrl: "https://maps.app.goo.gl/KALhC8exT42M6SfN7",
   githubUrl: "https://github.com/n817",
   linkedinUrl: "https://www.linkedin.com/in/n817",
-  resume: "/nikolai_gavriushin_cv.pdf",
+  resume: "/cv_nikolai_gavriushin.pdf",
 };
